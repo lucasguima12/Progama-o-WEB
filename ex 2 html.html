@@ -1,0 +1,114 @@
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>02 DESENVOLVIMENTO WEB</title>
+    </head>
+
+    <body bgcolor="#C0C0C0">
+        <p><font size="5"><font color="##FF0000">Essa é uma fonte de tamanho 4</font></font></p><hr/>
+        <p><font face="Bookman Old Style, Book Antiqua, Garamond">Esse parágrafo tem sua fonte formatada.</font></p>
+        <basefont size="2" color="green">
+            <p>Esse parágrafo tem sua fonte formatada com tag basefont</p>
+            <p>Esse parágrafo tem sua fonte formatada com tag basefont</p>
+            <p>Esse parágrafo tem sua fonte formatada com tag basefont</p>
+        </basefont>
+        <p><font size="7" face="Georgia, arial black" color="lighblue">L </font>etra por letra pode ser modificada.</p><hr/>
+        <h4 align = "center"><font face="Georgia" color="#FF0000"><font size="4">Exemplo de link:</font></font></h4>
+        <a href="http://www.educatux.com.br" target="_blank" title="EducatuX">EducatuX</a><br/>
+        <a href="http://www.google.com/" target="_blank" title="Google">Google</a><br/><br/><hr/>
+        <h3>HTML - Hipertexto de Referência / href<a name="top"></a></h3>
+            <a href="#top">Ir para cima</a>
+        <h3>HTML - Links de Texto<a name="text"></a></h3>
+            <a href="#text">Aprender sobre links de texto</a>
+        <h3>HTML - Texto de E-mail<a name="email"></a> </h3>
+            <a href="#email">Aprender sobre endereços de e-mail</a>
+        <p><b><font size="4" face="Georgia">E-mail para dúvidas ou questionamentos:</font></b></p>
+            <a href="mailto:gabrielyago25@gmail.com?subject=Questions " >Perguntas aqui</a><br/>
+        <p><b><font size="4" face="Georgia">Link com download disponível</font></b></p>
+            <a href="https://docplayer.com.br/storage/110/193345171/1599607376/MW7K8DmR3mfR4wdtbCFT-A/193345171.pdf">Download meu currículo</a><hr/>
+
+            <p>Método para adição de mais espaços |&nbsp;&nbsp;&nbsp;&nbsp; mais espaços.</p>
+            <p>Método para utilização:<br/> Menor que  &lt; <br/> Maior que  &gt; <br />Cabeçalho  &lt;head&gt; </p>
+            <!-- Aspas: &quot;
+                Exclamação Invertida: &iexcl;
+                Centavo: &cent;
+                Libra Esterlina: &pound;
+                Euro: &euro;
+                Moeda: &curren;
+                Copyright: &copy;
+                Registered Trademark: &reg;
+                TradeMark: &trade; -->
+        <img alt="Exemplo imagem HTML" align="center" src="http://www.educatux.com.br/imgs/EducatuX.png" width="120" height="75" /><br/>
+        <img alt="Exemplo imagem HTML" align="center" src="https://webkit.org/demos/srcset/image-src.png" width="120" height="75"/>
+        <p><b><font size="4" face="Georgia">Acesso ao website via imagem.</font></b></p>
+        <a href="http://www.educatux.com.br" target="_blank" title="HTML link image example">
+            <img alt="html image example" src="http://www.educatux.com.br/imgs/EducatuX.png" width="120" height="75" /> 
+        </a>
+        <p><b><font size="4" face="Georgia">Miniatura:</font></b></p>
+        <a href="http://www.educatux.com.br/imgs/EducatuX.png" target="_blank" title="HTML link image thumbnail example">
+            <img alt="html image example" src="http://www.educatux.com.br/imgs/EducatuX.png" width="66" height="49" />
+            <br/></a><hr/><br/>
+        <h4 align="center"><b><font size="4" face="Georgia" color="darkred">Tipos de formulários existentes.</font></b></h4>
+        <p><b><font size="3" face="Georgia">Nome e senha.</font></b></p>
+        <form method="post" action="mailto:gabrielyago25@gmail.com">
+            Nome: <input type="text" size="15" maxlength="25" name="name" /><br />
+            Senha: <input type="password" size="15" maxlength="8" name="password" /><br />
+            <input type="submit" value="Send"/>
+        </form>
+        <p><b><font size="3" face="Georgia">Botões.</font></b></p>
+        <form method="post" action="mailto:gabrielyago25@gmail.com">
+            <p>Que tipo de sapatos você está usando?</p>
+            <label>Color:</label><br/>
+            <input type="radio" name="color" value="dark" /> Escuro <br/>
+            <input type="radio" name="color" value="light" /> Claro <br/>
+            <label>Size:</label><br>
+            <input type="radio" name="size" value="small" /> Pequeno <br/>
+            <input type="radio" name="size" value="average" /> Normal <br/>
+            <input type="radio" name="size" value="big" /> Grande <br/>
+            <input type="submit" value="Send" />
+        </form>
+        <p><b><font size="3" face="Georgia">Caixas de marcação.</font></b></p>
+        <form method="post" action="mailto:gabrielyago25@gmail.com">
+            <p>Que cor de sapatos você prefere?</p>
+            <input type="checkbox" name="shoes" value="black" /> Preto <br/>
+            <input type="checkbox" name="shoes" value="white" /> Branco <br/>
+            <input type="checkbox" name="shoes" value="grey" /> Cinza <br/>
+            <input type="checkbox" name="shoes" value="black&white" /> Preto e Branco <br/>
+            <input type="submit" value="Send" />
+        </form>
+        <p><b><font size="3" face="Georgia">Selecionamento de informação 1.</font></b></p>
+        <form method="post" action="mailto:gabrielyago25@gmail.com">
+            <p>Preferência musical</p>
+            <select multiple name="music" size="4">
+                <option value="emo" selected>Emo</option>
+                <option value="metal/rock" >Metal/Rock</option>
+                <option value="hiphop" >Hip Hop</option>
+                <option value="jazz" >Jazz</option>
+            </select><br/>
+            <input type="submit" value="Send" />
+        </form>
+        <p><b><font size="3" face="Georgia">Selecionamento de informação 2.</font></b></p>
+        <form method="post" action="mailto:gabrielyago25@gmail.com">
+            <p>Nível de Educação?</p>
+            <select name="education">
+                <option>Escolha</option>
+                <option>Ensino Médio</option> 
+                <option>Faculdade</option>
+                <option>Doutorado</option>
+                <option>Completo</option>
+            </select><br/>
+            <input type="submit" value="Send" />
+        </form>
+        <p><b><font size="3" face="Georgia">Caixa de texto.</font></b></p>
+        <form method="post" action="mailto:gabrielyago25@gmail.com"><br/>
+            <textarea rows="5" cols="20" wrap="physical" name="comments">Escreva um comentário</textarea><br />
+            <input type="submit" value="Send" />
+        </form>
+
+        <p align = "right">Gabriel Yago Barbosa Hodon, 2020</br>&copy; Todos os direitos reservados</p>
+    </body>
+</html>
