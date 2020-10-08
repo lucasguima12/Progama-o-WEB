@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Luiz - Aula JS 2</title>
+</head>
+<body>
+
+    <h1>Programa de boas Vindas para somar 2 numeros</h1>
+
+    <form action="" name="numeros" method="post">
+        <label for="numero1">
+            <input type="number" value="Digite um numero aqui..." name="numero1" id="numero1">
+        </label>
+
+        <label for="numero2">
+            <input type="number" value="Digite um numero aqui..." name="numero2" id="numero2">
+        </label>
+        <input type="button" value="Somar" onclick="soma()">
+        <input type="reset" value="Zerar dados">
+    </form>
+
+<script>
+    function soma() {
+        let numero1 = parseInt(document.numeros.numero1.value);
+        let numero2 = parseInt(document.numeros.numero2.value);
+
+        window.alert('A soma dos numeros é: ' + String(numero1 + numero2))
+        document.write('A soma dos numeros é: ' + String(numero1 + numero2))
+    }
+</script>
+
+</body>
+</html>

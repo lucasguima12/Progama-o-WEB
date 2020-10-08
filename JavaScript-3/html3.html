@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Luiz - Aula JS 2</title>
+</head>
+<body>
+
+<h1>Programa Conversao de string</h1>
+
+<form name="formcurso" method="post">
+    <input type="text" name="f_cursodig" size="8" maxlength="4"> (SSIT) <p></p>
+    <input type="button" name="bt_validar" value="Confirm" onclick="curso()">
+    <input type="reset" value="Reset" name="cancelar"><p></p>
+    <input type="text" value="Codigo do curso" name="cod_curso">
+
+</form>
+<script>
+    function curso() {
+        var cod1 = document.formcurso.f_cursodig.value
+        if (cod1.toUpperCase() === 'SIST'){
+            document.formcurso.cod_curso.value = 'SIST001/F8'
+        } else {
+            window.alert('Curso Invalido')
+        }
+    }
+</script>
+
+</body>
+</html>
